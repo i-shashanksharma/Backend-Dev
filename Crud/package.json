@@ -1,18 +1,17 @@
 {
-  "name": "expresspost",
+  "name": "crud",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "Middleware.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" :"node server"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "dotenv": "^17.2.3",
     "express": "^5.2.1"
   }
 }
