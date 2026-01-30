@@ -1,0 +1,24 @@
+1. Initialize repo with multiple files
+mkdir advanced-git
+cd advanced-git
+git init
+echo "Hello" > a.txt
+echo "World" > b.txt
+git add .
+git commit -m "Initial files"
+
+2️. Create .gitignore
+echo "node_modules/" > .gitignore
+git add .gitignore
+git commit -m "Added gitignore"
+
+3️. Use git stash
+echo "temp work" >> a.txt
+git stash
+
+4️. Create & tag release
+git tag -a v1.0 -m "Version 1.0 release"
+
+5️. Push everything
+git remote add origin https://github.com/i-shashanksharma/Hello.git
+git push origin main

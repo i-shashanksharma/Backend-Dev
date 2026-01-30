@@ -1,0 +1,17 @@
+1. Clone your fork
+git clone https://github.com/i-shashanksharma/Hello.git
+cd repo-name
+
+2. Create new branch
+git checkout -b my-feature
+
+3. Make changes & push
+git add .
+git commit -m "My changes"
+git push origin my-feature
+
+4. Create Pull Request
+
+On GitHub:
+
+Your fork → Compare & Pull Request → Create PR

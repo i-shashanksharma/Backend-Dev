@@ -1,0 +1,16 @@
+1. Create new branch
+git checkout -b feature
+
+2. Add new file in feature branch
+echo "Feature work" > feature.txt
+git add feature.txt
+git commit -m "Added feature file"
+
+3. Switch to main branch
+git checkout main
+
+4️. Merge feature into main
+git merge feature
+
+5️. Delete feature branch
+git branch -d feature

@@ -1,0 +1,50 @@
+1. Create first branch (branch1)
+git checkout -b branch1
+
+
+Edit README.md
+Change first line to:
+
+This is change from branch1
+
+
+Then commit:
+
+git add README.md
+git commit -m "Updated README in branch1"
+
+
+2. Create second branch (branch2)
+git checkout main
+git checkout -b branch2
+
+
+Edit the same line in README.md to:
+
+This is change from branch2
+
+
+Then commit:
+
+git add README.md
+git commit -m "Updated README in branch2"
+
+
+3. Merge branch1 into main
+git checkout main
+git merge branch1
+
+
+This will merge successfully
+
+
+4. Try merging branch2 into main
+git merge branch2
+
+
+5. Fix conflict manually
+
+Open README.md, fix conflict, then:
+
+git add README.md
+git commit -m "Resolved merge conflict"
