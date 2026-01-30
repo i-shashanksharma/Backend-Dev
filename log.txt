@@ -1,0 +1,5 @@
+INFO Server started
+ERROR Database failed
+WARNING Low memory
+ERROR Disk full
+INFO User logged in
