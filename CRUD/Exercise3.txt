@@ -1,0 +1,19 @@
+1. Course with Prerequisites
+{
+  courseName: "DBMS",
+  courseCode: "CS101",
+  prerequisites: ["CS100"]
+}
+
+2. Professor with Multiple Departments
+{
+  name: "Dr. Sharma",
+  departments: ["CSE", "IT"]
+}
+
+3. Grade with References
+{
+  studentId: ObjectId("..."),
+  courseId: ObjectId("..."),
+  grade: "A"
+}

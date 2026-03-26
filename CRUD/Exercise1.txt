@@ -1,0 +1,33 @@
+{
+  name: "Shashank",
+  email: "shashank@gmail.com",
+  gpa: 3.4,
+  city: "Jaipur",
+  department: "CSE",
+  courses: ["DBMS", "OS", "CN"]
+}
+
+1. Add New Student
+db.students.insertOne({
+  name: "Shashank",
+  email: "shashank@gmail.com",
+  gpa: 3.4,
+  city: "Jaipur",
+  department: "CSE",
+  courses: ["DBMS", "OS"]
+})
+
+2. View All Students
+db.students.find()
+
+3. Find Student by Email
+db.students.find({ email: "shashank@gmail.com" })
+
+4. Update Student GPA
+db.students.updateOne(
+  { email: "shashank@gmail.com" },
+  { $set: { gpa: 3.8 } }
+)
+
+5. Delete Student
+db.students.deleteOne({ email: "shashank@gmail.com" })
