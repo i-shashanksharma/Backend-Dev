@@ -1,0 +1,26 @@
+1. Create Database & Collection
+use libraryDB
+db.createCollection("books")
+
+2. Add New Books
+db.books.insertOne({
+  title: "Java Basics",
+  author: "James Gosling",
+  available: true
+})
+
+3. Find Books by Author
+db.books.find({ author: "James Gosling" })
+
+Update Book Availability
+db.books.updateOne(
+  { title: "Java Basics" },
+  { $set: { available: false } }
+)
+
+5. Track Borrowed Books by User
+db.borrowed.insertOne({
+  user: "Shashank",
+  book: "Java Basics",
+  borrowDate: new Date()
+})
